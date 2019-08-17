@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.15">
+    <root id="1">
+      <ServerVersion>5.0.96</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="aaaa"/>
+    <schema id="3" parent="1" name="aaaaadb"/>
+    <schema id="4" parent="1" name="abcd"/>
+    <schema id="5" parent="1" name="easyui"/>
+    <schema id="6" parent="1" name="information_schema">
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="7" parent="1" name="jspdb"/>
+    <schema id="8" parent="1" name="laobao"/>
+    <schema id="9" parent="1" name="majorpprj"/>
+    <schema id="10" parent="1" name="mavprj"/>
+    <schema id="11" parent="1" name="mvnssm"/>
+    <schema id="12" parent="1" name="my12306"/>
+    <schema id="13" parent="1" name="myactiviti"/>
+    <schema id="14" parent="1" name="mysql"/>
+    <schema id="15" parent="1" name="nbw1"/>
+    <schema id="16" parent="1" name="oracledata"/>
+    <schema id="17" parent="1" name="oracleshopping"/>
+    <schema id="18" parent="1" name="prj"/>
+    <schema id="19" parent="1" name="prj2015"/>
+    <schema id="20" parent="1" name="pur"/>
+    <schema id="21" parent="1" name="shopdb"/>
+    <schema id="22" parent="1" name="smsdb"/>
+    <schema id="23" parent="1" name="ssmprj"/>
+    <schema id="24" parent="1" name="ssmshop">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="25" parent="1" name="strutsprj"/>
+    <schema id="26" parent="1" name="taa"/>
+    <schema id="27" parent="1" name="test"/>
+    <schema id="28" parent="1" name="test2"/>
+    <schema id="29" parent="1" name="testdb"/>
+    <schema id="30" parent="1" name="webchatdb"/>
+    <table id="31" parent="24" name="company"/>
+    <table id="32" parent="24" name="permis"/>
+    <table id="33" parent="24" name="role"/>
+    <table id="34" parent="24" name="role_permis"/>
+    <table id="35" parent="24" name="role_users"/>
+    <table id="36" parent="24" name="section"/>
+    <table id="37" parent="24" name="users"/>
+    <column id="38" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="39" parent="31" name="company">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="40" parent="31" name="description">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <index id="41" parent="31" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="42" parent="31" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="43" parent="32" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="44" parent="32" name="permistitle">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="45" parent="32" name="href">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="46" parent="32" name="parent">
+      <Position>4</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="47" parent="32" name="permisname">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="48" parent="32" name="permistype">
+      <Position>6</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="49" parent="32" name="description">
+      <Position>7</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <index id="50" parent="32" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="51" parent="32" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="52" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="53" parent="33" name="rolename">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="54" parent="33" name="description">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <index id="55" parent="33" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="56" parent="33" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="57" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="58" parent="34" name="roleid">
+      <Position>2</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="59" parent="34" name="permisid">
+      <Position>3</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <index id="60" parent="34" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="61" parent="34" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="62" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="63" parent="35" name="ids">
+      <Position>2</Position>
+      <DataType>VARCHAR(200)|12s</DataType>
+    </column>
+    <column id="64" parent="35" name="roleid">
+      <Position>3</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <index id="65" parent="35" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="66" parent="35" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="67" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="68" parent="36" name="sectionname">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="69" parent="36" name="companyid">
+      <Position>3</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <index id="70" parent="36" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="71" parent="36" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="72" parent="37" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="73" parent="37" name="username">
+      <Position>2</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="74" parent="37" name="userpwd">
+      <Position>3</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="75" parent="37" name="sectionid">
+      <Position>4</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <index id="76" parent="37" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="77" parent="37" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
